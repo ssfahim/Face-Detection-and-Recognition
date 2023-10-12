@@ -1,6 +1,6 @@
-# for groupOf5 image use:
+<h3> for groupOf5 image use: </h3>
 faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.4, minNeighbors=1)
 
-# for groupOf3 image use:
+<h3> for groupOf3 image use: </h3>
 faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=2)
 
