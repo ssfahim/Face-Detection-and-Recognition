@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img = cv.imread("groupOf5.jpg")
+img = cv.imread("groupOf3.jpg")
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # Verify the path to the Haar Cascade XML file
@@ -13,7 +13,7 @@ if haar_cascade.empty():
     raise Exception(f"Error loading cascade classifier: {cascade_path}")
 
 # Adjust the scaleFactor and minNeighbors values
-faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.4, minNeighbors=1)
+faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=3)
 
 
 for (x, y, w, h) in faces_rect:
